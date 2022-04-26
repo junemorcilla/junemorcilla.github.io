@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>My Adventures</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+
+<!-- Font Google -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container"> <a class="navbar-brand navbar-logo text-white" href="#"> My Adventures </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Back</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar --> 
+
+<!-- Banner Image -->
+
+<div class="banner text-center" data-scroll-index='0'>
+</div>
+
+<!-- End Banner Image --> 
+
+<!-- About -->
+
+<div class="about-us section-padding" data-scroll-index='1'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>Bamboo Forest</h3>
+        <span class="section-title-line"></span> </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+            <h4>Bamboo Forest</h4>
+            <h4>April 4, 2020</h4>
+            <p style="text-align:justify">The newest attraction in Medellin, the Bamboo Forest, is giving us abundant Japan and Korea fresh vibes. This forest resembles that of Kyoto Japan’s bamboo forest. It also gives us a solid Korean drama atmosphere. This place is truly serving everyone a different feel in town. With an entrance fee of only 20 Pesos, you can spend the whole day taking pictures of this marvelous bamboo scenery. It won’t also be difficult to locate the spot since it’s just a few minutes tricycle ride from the town proper and it is beside a famous sugarcane plantation. Anytime is the perfect time to visit the forest for a photo though different times of the day offers a different lighting. The area is still raw and undeveloped. People just go there to take pictures of the beautiful pathway lined with bamboo trees. Just recently, there have been news about some guests who vandalized the place, carving their names and confessions of love on the bamboo trees. As a reminder, everyone is advised to always be mindful and maintain the cleanliness to help preserve the charm of this place. Leave no trace. From the beginning of a journey to long after arriving home, travelling with family and friends can be one of the most rewarding adventures you can have together. While travel enables families to form a stronger bond, children also benefit from new experiences and adults gain a greater appraciation from what's around them. Travelling with family truly and friends is life enriching</p>
+          </div>
+       </div>
+      </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-img"> 
+          <img src="images/bamboo-4.jpg" alt="" class="img-responsive" style="width:550px;"/> </div>
+        </div>
+    </div>
+
+     <div class="row">
+      <div class="col-md-6 mb-50">
+        <div class="section-img"> 
+          <img src="images/bamboo-2.jpg" alt="" class="img-responsive" style="width:550px;"/> </div>
+        </div>
+        <div class="col-md-6 mb-50">
+        <div class="section-img"> 
+          <img src="images/bamboo-3.jpg" alt="" class="img-responsive" style="width:550px;"/> </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- End About --> 
+
+<!-- End Contact -->
+<!-- <footer class="footer-copy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p>2018 &copy; Elegant. Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+      </div>
+    </div>
+  </div>
+</footer> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<!-- owl carousel js --> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- magnific-popup --> 
+<script src="js/jquery.fancybox.min.js"></script> 
+
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+
+<!-- isotope.pkgd.min js --> 
+<script src="js/isotope.pkgd.min.js"></script> 
+<script>
+  $(window).on("scroll",function () {
+
+      var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+      if(bodyScroll > 130){
+
+          navbar.addClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+      }else{
+
+          navbar.removeClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-white.png');
+
+      }
+
+  });
+
+  $(window).on("load",function (){
+
+
+
+var bodyScroll = $(window).scrollTop(),
+navbar = $(".navbar");
+
+if(bodyScroll > 130){
+
+navbar.addClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+}else{
+
+navbar.removeClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-white.png');
+
+}
+
+/* smooth scroll
+  -------------------------------------------------------*/
+  $.scrollIt({
+
+easing: 'swing',      // the easing function for animation
+scrollTime: 900,       // how long (in ms) the animation takes
+activeClass: 'active', // class given to the active nav element
+onPageChange: null,    // function(pageIndex) that is called when page is changed
+topOffset: -63
+});
+
+
+})
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>My Adventures</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+
+<!-- Font Google -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container"> <a class="navbar-brand navbar-logo text-white" href="#"> My Adventures </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Back</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar --> 
+
+<!-- Banner Image -->
+
+<div class="banner text-center" data-scroll-index='0'>
+</div>
+
+<!-- End Banner Image --> 
+
+<!-- About -->
+
+<div class="about-us section-padding" data-scroll-index='1'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>Maravilla</h3>
+        <span class="section-title-line"></span> </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+           <h4>Maravilla Beach Resort</h4>
+           <h4>May 25, 2020</h4>
+           <p style="text-align:justify">Tabuelan is one of the serene towns of Cebu, it has long been quiet, but just recently, this town has started to spread its name around the Island of Cebu for owning a white sand beach. This white sand beach that I’m talking about is the beautiful Maravilla beach. It is likely the most promising tourist destination in the Northwestern part of Cebu. It owns a long stretch of white sand beach and a turquoise water that will surely entice you to drench yourself. Though, this beach does not own the finest and the powdery white sand comparing it to the white sand beaches that I’ve been to. But, Maravilla beach can be a perfect place to distress and experience fun without having to worry about spending too much. You can actually opt to just sit back and relax while gazing into the stunning sunset when the sun rest below the horizon. Truly, Maravilla White sand beach is a great place for a quick getaway with family and friends. Aside from its just a 3 hour drive from Cebu City. I love how they manage to maintain the innate beauty of the beach. There’s more to see in Tabuelan actually, but that time, I wasn’t in my adventurous spirit, maybe because I was with a bunch of friends. And I can’t simply leave them to explore the other tourist attractions of Tabuelan. </p>
+          </div>
+       </div>
+      </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-img"> 
+          <img src="images/maravilla-4.jpg" alt="" class="img-responsive" style="width:550px;"/> </div>
+        </div>
+    </div>
+
+     <div class="row">
+      <div class="col-md-6 mb-50">
+        <div class="section-img"> 
+          <img src="images/maravilla-2.jpg" alt="" class="img-responsive" style="width:550px;"/> </div>
+        </div>
+        <div class="col-md-6 mb-50">
+        <div class="section-img"> 
+          <img src="images/maravilla-3.jpg" alt="" class="img-responsive" style="width:550px;"/> </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- End About --> 
+
+<!-- End Contact -->
+<!-- <footer class="footer-copy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p>2018 &copy; Elegant. Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+      </div>
+    </div>
+  </div>
+</footer> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<!-- owl carousel js --> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- magnific-popup --> 
+<script src="js/jquery.fancybox.min.js"></script> 
+
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+
+<!-- isotope.pkgd.min js --> 
+<script src="js/isotope.pkgd.min.js"></script> 
+<script>
+  $(window).on("scroll",function () {
+
+      var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+      if(bodyScroll > 130){
+
+          navbar.addClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+      }else{
+
+          navbar.removeClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-white.png');
+
+      }
+
+  });
+
+  $(window).on("load",function (){
+
+
+
+var bodyScroll = $(window).scrollTop(),
+navbar = $(".navbar");
+
+if(bodyScroll > 130){
+
+navbar.addClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+}else{
+
+navbar.removeClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-white.png');
+
+}
+
+/* smooth scroll
+  -------------------------------------------------------*/
+  $.scrollIt({
+
+easing: 'swing',      // the easing function for animation
+scrollTime: 900,       // how long (in ms) the animation takes
+activeClass: 'active', // class given to the active nav element
+onPageChange: null,    // function(pageIndex) that is called when page is changed
+topOffset: -63
+});
+
+
+})
+
+
+
+</script>
+</body>
+</html>
